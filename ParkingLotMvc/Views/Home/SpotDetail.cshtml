@@ -1,0 +1,26 @@
+@model Packt.Shared.ParkingSpot
+@{
+  ViewData["Title"] = "Slot Detail - " + Model.Id;
+}
+<h2>Slot Detail</h2>
+<hr />
+<div>
+  <dl class="dl-horizontal">
+    <dt>ID</dt>
+    <dd>@Model.Id</dd>
+    <dt>License Plate</dt>
+    <dd>@Model.LicensePlate</dd>
+    <dt>Entered Date</dt>
+    <dd>@Model.DateEntered</dd>
+    <dt>Departure Date</dt>
+    <dd>@Model.DepartureDate</dd>
+    <dt>Rate per hour</dt>
+    <dd>@Model.Rate</dd>
+    <dt>Occupied</dt>
+    <dd>@Model.Ocuppied</dd>
+    <dt>Duration</dt>
+    <dd>@ViewData["duration"] hrs.</dd>
+    <dt>Total Due</dt>
+    <dd>@ViewData["totalDue"]</dd>
+  </dl>
+</div>

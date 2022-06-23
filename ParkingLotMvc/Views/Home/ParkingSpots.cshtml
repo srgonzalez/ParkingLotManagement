@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Packt.Shared.ParkingSpot> 
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <h1>ParkingLot</h1>
+    <h2>Spots</h2>
+     <h3>Query from a service</h3>
+    <form asp-action="ParkingSpots" method="get">
+    <input name="licensePlate" placeholder="Enter a license plate" />
+    <input type="submit" />
+    </form>
+    <h3>Register entry</h3> 
+    <form asp-action="ParkingSpots" method="post">
+        <input name="Id" placeholder="Enter an ID" />
+        <input name="LicensePlate" placeholder="Enter a licence plate" />
+        Date Entered<input type="datetime" name="DateEntered" />
+        Departure Date<input type="datetime" name="DepartureDate" />
+        <input type="checkbox" name="Ocuppied" /> Occupied
+        Rate <input type="number" name="Rate" />
+        <input type="submit" />
+    </form>  
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Licence Plate</th>
+                        <th>Occupied</th>
+                        <th>Date Entered</th>
+                        <th>Departure Date</th>
+                        <th>Rate</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LicensePlate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Ocuppied)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DateEntered)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DepartureDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Rate)
+                            </td>
+                            <td>
+                                <a asp-controller="Home" 
+                                    asp-action="SpotDetail" 
+                                    asp-route-id="@item.Id">
+                                    View Details
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>

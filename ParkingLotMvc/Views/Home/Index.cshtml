@@ -1,0 +1,58 @@
+﻿@model ParkingLotMvc.Models.HomeIndexViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <h1>ParkingLot</h1>
+    <h2>Spots</h2>
+        
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Licence Plate</th>
+                        <th>Occupied</th>
+                        <th>Date Entered</th>
+                        <th>Departure Date</th>
+                        <th>Rate</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in @Model.ParkingSpots)
+                    {
+                        <tr>
+                            <td>
+                                @item.Id
+                            </td>
+                            <td>
+                                @item.LicensePlate
+                            </td>
+                            <td>
+                                @item.Ocuppied
+                            </td>
+                            <td>
+                                @item.DateEntered
+                            </td>
+                            <td>
+                                @item.DepartureDate
+                            </td>
+                            <td>
+                                @item.Rate
+                            </td>
+                            <td>
+                                <a asp-controller="Home" 
+                                    asp-action="SpotDetail" 
+                                    asp-route-id="@item.Id">
+                                    View Details
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>

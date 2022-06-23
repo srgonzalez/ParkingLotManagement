@@ -1,0 +1,14 @@
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\bin\Debug\net6.0\ParkingSpotEntitiesLib.deps.json
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\bin\Debug\net6.0\ParkingSpotEntitiesLib.runtimeconfig.json
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\bin\Debug\net6.0\ParkingSpotEntitiesLib.dll
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\bin\Debug\net6.0\ParkingSpotEntitiesLib.pdb
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\ParkingSpotEntitiesLib.csproj.AssemblyReference.cache
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\ParkingSpotEntitiesLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\ParkingSpotEntitiesLib.AssemblyInfoInputs.cache
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\ParkingSpotEntitiesLib.AssemblyInfo.cs
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\ParkingSpotEntitiesLib.csproj.CoreCompileInputs.cache
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\ParkingSpotEntitiesLib.dll
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\refint\ParkingSpotEntitiesLib.dll
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\ParkingSpotEntitiesLib.pdb
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\ParkingSpotEntitiesLib.genruntimeconfig.cache
+D:\Sergio\Code\ParkingLotManagement\ParkingSpotEntitiesLib\obj\Debug\net6.0\ref\ParkingSpotEntitiesLib.dll
